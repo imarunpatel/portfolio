@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS Scripts -->
+    <script src="../assets/js/main.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="header-container"></div>
+    <script>
+        fetch('../components/header.html')
+            .then((res) => res.text())
+            .then((html) => (document.getElementById('header-container').innerHTML = html))
+    </script> -->
+
+    <main>
+        <aside>
+            <div class="top">
+                <div class="avatar">
+                    <img src="https://sergio-react.vercel.app/static/img/about-me.jpg" alt="">
+                </div>
+            </div>
+            <div class="middle">
+                <nav>
+                    <ul class="nav-menu">
+                        <li data-page="home">
+                            <a href="#Home">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li data-page="about">
+                            <a href="#Home">
+                                <i class="fa-regular fa-address-card"></i>
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li data-page="experience">
+                            <a href="#Home">
+                                <i class="fa-solid fa-computer"></i>
+                                <span>Experience</span>
+                            </a>
+                        </li>
+                        <li data-page="skill">
+                            <a href="#Home">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                                <span>Skill</span>
+                            </a>
+                        </li>
+                        <li data-page="project">
+                            <a href="#Home">
+                                <i class="fa-solid fa-kitchen-set"></i>
+                                <span>Project</span>
+                            </a>
+                        </li>
+                        <li data-page="contact">
+                            <a href="#Home">
+                                <i class="fa-regular fa-address-book"></i>
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bottom">
+                <div class="item">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </aside>
+        <div class="main-container">
+            <div id="dynamic-content"></div>
+        </div>
+    </main>
+
+    <!-- <div id="footer-container"></div>
+    <script>
+        fetch('../components/footer.html')
+            .then((res) => res.text())
+            .then((html) => (document.getElementById('footer-container').innerHTML = html))
+    </script> -->
+</body>
+</html>

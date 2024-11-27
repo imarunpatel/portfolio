@@ -1,0 +1,85 @@
+/* Reset box model to border-box for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+  }
+  html {
+    font-size: 10px;
+  }
+  /* Remove default margins and padding for all elements */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Reset body to a clean slate */
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;       /* Improve readability */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Remove list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove text-decoration and inherit color for links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Remove default button styles */
+  button {
+    all: unset; /* Removes all inherited and user agent styles */
+    cursor: pointer;
+  }
+  
+  /* Remove fieldset and legend styles */
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  legend {
+    display: block;
+    padding: 0;
+  }
+  
+  /* Normalize images and media elements */
+  img, picture, video, canvas, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Ensure form elements have a consistent appearance */
+  input, textarea, select, button {
+    font: inherit;
+    color: inherit;
+  }
+  
+  /* Remove focus outlines but preserve accessibility */
+  :focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  
+  /* Reset tables */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+  }
+  

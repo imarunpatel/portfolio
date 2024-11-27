@@ -1,0 +1,24 @@
+.home-container {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* flex: 1; */
+}
+
+.home-container .summary-box {
+    display: flex;
+    padding: 2em 0;
+    max-width: 700px;
+    width: 100%;
+}
+
+.home-container .summary-box .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    align-items: self-start;
+    /* font-size: 6rem; */
+}
