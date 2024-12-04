@@ -8,12 +8,20 @@ main {
   display: flex;
   height: 100%;
 }
+
 main aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(247, 247, 255);
+  position: fixed;
+  width: 197px;
+  height: 100%;
+}
+
+.sidebar-spacer {
   width: 250px;
+  background-color: green;
 }
 
 .main-container {
