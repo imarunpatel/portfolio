@@ -14,7 +14,7 @@ const Page = () => {
                       </svg>
                   </span>
                   <h3 className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                    <a href='www.google.com' target='_blank'>
+                    <a href='https://www.hdfclife.com/' target='_blank' className='hover:text-violet-600'>
                       HDFC Life Insurance, Banglore <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i>
                     </a>
                     <time>
@@ -61,7 +61,7 @@ const Page = () => {
                       </svg>
                   </span>
                   <h3 className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                    <a href='www.google.com' target='_blank'>
+                    <a href='https://www.parallelreality.co.uk/' target='_blank'  className='hover:text-violet-600'>
                       Parallel Reality, UK (Remote) <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i>
                     </a>
                     <time>
@@ -97,7 +97,7 @@ const Page = () => {
                       </svg>
                   </span>
                   <h3 className="flex justify-between items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                    <a href='www.google.com' target='_blank'>
+                    <a href='https://simplyturn.com/' target='_blank'  className='hover:text-violet-600'>
                       SimplyTurn Technology, Hyderabad (Remote) <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i>
                     </a>
                     <time>

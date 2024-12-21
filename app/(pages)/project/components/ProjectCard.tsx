@@ -10,6 +10,7 @@ export interface Project {
     backend: string[];
   };
   image: string;
+  link: string;
 }
 interface Props {
   data: Project;
@@ -17,10 +18,10 @@ interface Props {
 
 const ProjectCard: FC<Props> = (props) => {
   return (
-    <div className="flex flex-col lg:flex-row shadow-lg rounded-md p-3">
+    <div className="flex flex-col lg:flex-row shadow-md rounded-md p-3 mb-6">
       <div className="flex-1">
         <h5 className="mb-2 border-b text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-          {props.data.name}
+          <a href={props.data.link} target="_blank" className="flex items-center gap-2 hover:text-violet-700">{props.data.name} <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i></a>
         </h5>
         <div className="mb-3 font-normal text-gray-700 dark:text-gray-400">
           <p>{props.data.description}</p>
