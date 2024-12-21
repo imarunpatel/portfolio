@@ -15,8 +15,8 @@ const Sidebar = () => {
                 ease-out shadow-md fixed bg-violet-50/5">
       <div className="flex flex-col justify-between h-full">
         <div className="pt-10 flex justify-center">
-          <div className="avatar w-10 md:w-24 rounded-full overflow-hidden">
-              <Image layout="responsive" src="https://arunpatel.skillstrack.in/img/arun.jpg" alt="Avatar" width={1} height={1} />
+          <div className="avatar w-10 md:w-24 rounded-full overflow-hidden relative">
+              <Image layout="responsive" src="/images/arun.jpg" alt="Arun Patel" width={1} height={1} />
           </div>
         </div>
         <nav className="mt-4">
