@@ -24,7 +24,7 @@ const ProjectCard: FC<Props> = (props) => {
           <a href={props.data.link} target="_blank" className="flex items-center gap-2 hover:text-violet-700">{props.data.name} <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i></a>
         </h5>
         <div className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          <p>{props.data.description}</p>
+          <div>{props.data.description}</div>
           <ul className="list-disc ml-4">
             {props.data.points.map((point, index) => (
               <li key={index}>{point}</li>
@@ -47,12 +47,12 @@ const ProjectCard: FC<Props> = (props) => {
 
       <div className="flex-1 flex items-center p-2 overflow-hidden">
         <Image
-          layout="responsive"
+          // layout="responsive"
           className=" object-cover w-full"
           src={props.data.image}
           width={1}
           height={1}
-          alt=""
+          alt="Project Image"
         />
       </div>
     </div>

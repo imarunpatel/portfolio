@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const menuItems = [
   { name: "Home", path: "/", icon: 'fa-solid fa-igloo' },
@@ -9,6 +11,7 @@ export const menuItems = [
 ];
 
 const Sidebar = () => {
+  const pathname = usePathname();
 
   return (
     <aside className="hidden sm:block w-14 md:w-48 h-screen transition-all duration-100 
@@ -22,8 +25,8 @@ const Sidebar = () => {
         <nav className="mt-4">
           <ul>
             {menuItems.map((item) => (
-              <li key={item.path} className="hover:bg-gray-200 flex">
-                <Link href={item.path} className=" p-4 flex items-center text-gray-500 gap-2 w-full">
+              <li key={item.path} className="hover:bg-gray-200 flex ">
+                <Link href={item.path} className={`p-4 flex items-center ${pathname === item.path ? 'text-violet-700' : 'text-gray-500'}  gap-2 w-full`}>
                   <i className={item.icon}></i>
                   <span className="hidden md:block">{item.name}</span>
                 </Link>
@@ -32,7 +35,6 @@ const Sidebar = () => {
           </ul>
         </nav>
         <div className="bottom pys-6 px-2">
-          {/* LinkedIn, Facebook */}
         </div>
       </div>
     </aside>

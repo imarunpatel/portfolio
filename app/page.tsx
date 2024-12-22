@@ -1,10 +1,9 @@
 "use client";
-
-import Button from "./components/Button";
+import DownloadResumeBtn from "./components/DownloadResumeBtn";
 
 export default function Home() {
   return (
-    <div  className="flex flex-col justify-center gap-5 h-full px-14 py-2">
+    <div  className="flex flex-col justify-center gap-5 h-full py-2">
       <div className="font-bold">
         Hello 👋 , I am
       </div>
@@ -23,7 +22,7 @@ export default function Home() {
         <br/>
         My work reflects my passion for crafting impactful web solutions that enhance user experiences while solving complex problems. I thrive in collaborative environments and continuously aim to deliver high-quality products that make a difference.
       </div>
-      <Button title="Download Resume" onClick={() => {}} />
+      <DownloadResumeBtn />
     </div>
   );
 }
