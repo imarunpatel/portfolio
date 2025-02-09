@@ -1,8 +1,6 @@
 import { SparklesCore } from "@/components/ui/sparkles";
 import Button from "../../components/Button";
 import Heading from "../../components/Heading";
-import Logo from '../../public/icons/10411620_1974.svg';
-import Image from "next/image";
 import { ParallaxIcons } from "@/components/ui/ParallexText";
 
 const Home = () => {

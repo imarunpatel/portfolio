@@ -1,6 +1,5 @@
 "use client";
-
-import React, { FC } from "react";
+import React from "react";
 import { motion } from "motion/react";
 
 const Button = () => {
