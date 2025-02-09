@@ -13,7 +13,24 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      minHeight: {
+        'screen-14': 'calc(100vh - 3.5rem)', // h-14 is 3.5rem
+      },
     },
+    animation: {
+      shimmer: "shimmer 2s linear infinite"
+    },
+    keyframes: {
+      shimmer: {
+        from: {
+          "backgroundPosition": "0 0"
+        },
+        to: {
+          "backgroundPosition": "-200% 0"
+        }
+      }
+    }
   },
   plugins: [],
+
 } satisfies Config;
