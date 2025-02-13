@@ -6,8 +6,8 @@ const PageScrollBar = () => {
   const { scrollYProgress } = useScroll();
 
   return (
-    <div>
       <motion.div
+        className="z-20"
         id="scroll-indicator"
         style={{
           scaleX: scrollYProgress,
@@ -20,7 +20,6 @@ const PageScrollBar = () => {
           backgroundColor: "#60a5fa",
         }}
       />
-    </div>
   );
 };
 
