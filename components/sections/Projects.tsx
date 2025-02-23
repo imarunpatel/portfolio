@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useRef } from "react";
+import React, { useRef } from "react";
 import ProjectCard from "@/components/ProjectCard";
 import projects from "@/app/data/projectData";
 
