@@ -1,7 +1,32 @@
 'use client';
 import React, { useRef } from "react";
+import HDFCLife1 from '../../public/images/hdfc/hdfc1.webp'
 
 import { Timeline } from "../ui/Timeline";
+import { InfiniteMovingCards } from "../ui/InfiniteMovingCard";
+
+const hdfcPortfolio = [
+  {
+    url: HDFCLife1.src,
+    title: "A Tale of Two Cities",
+  },
+  {
+    url: HDFCLife1.src,
+    title: "Hamlet",
+  },
+  {
+    url: HDFCLife1.src,
+    title: "A Dream Within a Dream",
+  },
+  {
+    url: HDFCLife1.src,
+    title: "Pride and Prejudice",
+  },
+  {
+    url: HDFCLife1.src,
+    title: "Moby-Dick",
+  },
+];
 
 const data = [
   {
@@ -27,6 +52,13 @@ const data = [
             Data-Driven Dashboards: Worked on multiple dashboards, delivering insightful and user-friendly interfaces for data analysis and management.
           </li>
         </ul>
+        <div className="w-[83vw] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <InfiniteMovingCards
+            items={hdfcPortfolio}
+            direction="right"
+            speed="slow"
+          />
+        </div>
       </div>
     ),
   },
@@ -89,3 +121,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

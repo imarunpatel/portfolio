@@ -15,6 +15,8 @@ export default {
       },
       minHeight: {
         'screen-14': 'calc(100vh - 3.5rem)', // h-14 is 3.5rem
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
     animation: {
@@ -28,9 +30,16 @@ export default {
         to: {
           "backgroundPosition": "-200% 0"
         }
-      }
+      },
+      scroll: {
+        to: {
+          transform: "translate(calc(-50% - 0.5rem))",
+        },
+      },
     }
   },
   plugins: [],
 
 } satisfies Config;
+
+

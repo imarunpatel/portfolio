@@ -8,7 +8,7 @@ const Home = () => {
     <div  className="flex min-h-screen flex-col  gap-5 px-3 md:px-14 py-2" id="welcome">
       {/* <div className="h-[56px] w-full bg-red-50"></div> */}
     {/* <Image className="text-white" src={Logo} alt="" width={100} height={100} /> */}
-      <div className="flex-1 flex flex-col gap-5 justify-center">
+      <div className="flex-1 flex flex-col gap-5 justify-center pt-16">
         <div className="h-auto w-full flex flex-col overflow-hidden rounded-md">
           <Heading />
           <div className="w-auto md:w-[40rem] h-10 relative ">
@@ -32,7 +32,7 @@ const Home = () => {
             <div className="absolute inset-0 w-full h-full bgs [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
           </div>
         </div>
-        <div className="text-gray-300 text-md -mt-12">
+        <div className="text-gray-400 text-md -mt-12">
           {/* I have over 4 years of experience in designing, developing, and implementing scalable, responsive enterprise-level applications. Skilled at employing a configurable approach and creating common framework components to accelerate development and enhance maintainability. */}
           I graduated with a degree in Computer Science and have built a strong foundation as a Frontend Engineer. Over the years, I have worked on diverse and impactful projects such as EMA, Digi VPC, Galaxy, etc, where I contributed to building scalable, user-centric web applications.
           <br/>

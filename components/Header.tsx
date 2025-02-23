@@ -39,7 +39,7 @@ const Header = () => {
   }, [])
   
   return (
-    <header className=" z-10" >
+    <header className="z-50 fixed" >
       <div className='dark:bg-black w-full fixed top-0 hidden md:flex items-center neuton dark:text-gray-100 px-14 h-14'>
           <nav className='flex gap-8'>
               {

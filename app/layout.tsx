@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Montserrat, Neuton } from "next/font/google";
+import { Geist, Neuton } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import PageScrollBar from "@/components/ui/pageScrollBar";
@@ -10,10 +10,6 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
 
 const neuton = Neuton({ 
   variable: "--font-neuton", 
@@ -40,7 +36,7 @@ export default function RootLayout({
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${neuton.variable} ${montserrat.className} antialiased flex flex-col min-h-screen dark`}
+        className={`${geistSans.variable} ${neuton.variable} font-sans antialiased flex flex-col min-h-screen dark`}
       >
         <PageScrollBar/>
         <Header />

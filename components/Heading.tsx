@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 const Heading = () => {
   return (
     <motion.h1
-        className="relative pr-6 font-['Neuton'] py-1 w-fit text-white text-2xl md:text-3xl font-semibold rounded-md bg-gray-900 overflow-hidden border-2 border-transparent"
+        className="relative pr-6 py-1 w-fit text-white text-2xl md:text-3xl font-semibold rounded-md bg-gray-900 overflow-hidden border-2 border-transparent"
         animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] }}
         transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
         style={{
@@ -16,7 +16,9 @@ const Heading = () => {
           color: "transparent",
         }}
       >
-        Hello 👋 , I am Arun Patel a Frontend Engineer
+        <span className='text-xl md:text-2xl'>Hello 👋 , </span>
+        <br/> 
+        I am Arun a Frontend Engineer
       </motion.h1>
   )
 }
