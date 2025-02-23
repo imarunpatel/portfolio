@@ -3,6 +3,7 @@ import { Geist, Montserrat, Neuton } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import PageScrollBar from "@/components/ui/pageScrollBar";
+import Footer from "@/components/sections/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +47,7 @@ export default function RootLayout({
         <main className="flex-1 dark:bg-black flex flex-col">
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -5,8 +5,8 @@ import { ParallaxIcons } from "@/components/ui/ParallexText";
 
 const Home = () => {
   return (
-    <div  className="flex min-h-[calc(100vh-56px)] flex-col  gap-5 px-3 md:px-14 py-2 ">
-      
+    <div  className="flex min-h-screen flex-col  gap-5 px-3 md:px-14 py-2" id="welcome">
+      {/* <div className="h-[56px] w-full bg-red-50"></div> */}
     {/* <Image className="text-white" src={Logo} alt="" width={100} height={100} /> */}
       <div className="flex-1 flex flex-col gap-5 justify-center">
         <div className="h-auto w-full flex flex-col overflow-hidden rounded-md">
@@ -40,8 +40,8 @@ const Home = () => {
           In my current role, I specialize in creating seamless user interfaces while ensuring high performance and usability. My expertise spans React, Angular, AWS, System Design, and Web Components, Data Structure and Algoriths. Additionally, 
           I have a solid understanding of backend technologies, which allows me to bridge the gap between frontend and backend effectively. This understanding enables me to design efficient APIs, integrate services, and ensure smooth end-to-end application workflows.
           <br/>
-          <br/>
-          My work reflects my passion for crafting impactful web solutions that enhance user experiences while solving complex problems. I thrive in collaborative environments and continuously aim to deliver high-quality products that make a difference.
+          {/* <br/>
+          My work reflects my passion for crafting impactful web solutions that enhance user experiences while solving complex problems. I thrive in collaborative environments and continuously aim to deliver high-quality products that make a difference. */}
         </div>
         <Button />
       </div>

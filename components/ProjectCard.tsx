@@ -18,12 +18,12 @@ interface Props {
 
 const ProjectCard: FC<Props> = (props) => {
   return (
-    <div className="flex flex-col lg:flex-row shadow-md rounded-md p-3 mb-6">
+    <div className="flex flex-col gap-4 lg:flex-row shadow-sm shadow-gray-600 rounded-md p-3 mb-6 md:mb-12 last-of-type:mb-0">
       <div className="flex-1">
-        <h5 className="mb-2 border-b text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-          <a href={props.data.link} target="_blank" className="flex items-center gap-2 hover:text-violet-700">{props.data.name} <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i></a>
+        <h5 className="mb-2 text-lg sm:text-2xl md:text-2xl font-bold tracking-tight text-neutral-500 dark:text-neutral-500">
+          <a href={props.data.link} target="_blank" className="flex items-center gap-2 hover:text-blue-600">{props.data.name} <i className="fa-solid text-sm fa-arrow-up-right-from-square"></i></a>
         </h5>
-        <div className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <div className="mb-3 font-normal text-gray-700 dark:text-gray-300">
           <div>{props.data.description}</div>
           <ul className="list-disc ml-4">
             {props.data.points.map((point, index) => (
@@ -45,10 +45,10 @@ const ProjectCard: FC<Props> = (props) => {
         </div>
       </div>
 
-      <div className="flex-1 flex items-center p-2 overflow-hidden">
+      <div className="flex-1 flex items-center  rounded-lg overflow-hidden">
         <Image
           // layout="responsive"
-          className=" object-cover w-full"
+          className="object-cover w-full"
           src={props.data.image}
           width={1}
           height={1}

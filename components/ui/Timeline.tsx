@@ -9,6 +9,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
   title: string;
+  start: string;
+  end: string;
   content: React.ReactNode;
 }
 
@@ -34,28 +36,24 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-white dark:bg-black px-3 md:px-10"
       ref={containerRef}
     >
-      
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start mt-10 md:gap-10"
+            className="flex justify-start md:gap-5"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-14 w-full">
-              <div className="h-10 absolute -top-[2px] left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
-                <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
-              </div>
-              {/* <h3 className="hidden text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">
-                {item.title}
-              </h3> */}
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-10 w-full">
+              {/* <div className="h-10 absolute -top-[2px] left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center"> */}
+                <div className="h-4 w-4 left-0 top-2 absolute rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              {/* </div> */}
             </div>
 
             <div className="relative">
-              <h3 className="flex justify-between items-center text-3xl mb-0 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.title} <div className="text-lg"><span>2024</span> - <span>Present</span></div>
+              <h3 className="sm:flex justify-between items-center text-lg sm:text-2xl md:text-2xl mb-0 text-left font-bold text-neutral-500 dark:text-neutral-500">
+                {item.title} <div className="my-2 sm:my-0 text-end ml-auto text-sm md:text-lg"><span>{item.start}</span> - {item.end === 'Present' ? <span className="text-blue-600 bg-gray-300 px-3 py-1 rounded-md text-sm">{item.end}</span> : <span>{item.end}</span>}</div>
               </h3>
               {item.content}{" "}
             </div>
@@ -65,7 +63,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
+          className="absolute md:left-2 left-2 top-0 overflow-hidden w-[2px] bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 dark:via-neutral-700 to-transparent to-[99%]  [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] "
         >
           <motion.div
             style={{

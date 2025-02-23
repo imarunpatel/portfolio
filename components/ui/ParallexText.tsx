@@ -9,7 +9,7 @@ export function ParallaxIcons() {
   const x = useTransform(scrollY, [0, 6000], ["0%", "-100%"]);
 
   return (
-    <div className="overflow-hidden  tracking-tight bg-pink-20d0 pb-8 pt-2 leading-[0.8] whitespace-nowrap flex flex-nowrap w-full">
+    <div className="overflow-hidden  tracking-tight bg-pink-20d0  pt-2 leading-[0.8] whitespace-nowrap flex flex-nowrap w-full">
       <motion.div
         className="flex space-x-8 text-xl text-gray-800 dark:text-gray-300 w-max"
         style={{ x }} // Moves icons left

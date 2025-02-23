@@ -9,7 +9,7 @@ const Footer = () => {
   const pathname = usePathname();
 
   return (
-    <div className=" sm:hidden fixed bottom-0 bg-red w-full flex bg-white">
+    <div className=" sm:hidden fixed bottom-0 bg-red w-full flex bg-white dark:tet-gray-300">
       {menuItems.map((item, index) => (
         <Link
           key={index}

@@ -1,4 +1,4 @@
-import { Project } from "../(pages)/project/components/ProjectCard";
+import { Project } from "../../components/ProjectCard";
 
 const projects: Project[] = [
     {
