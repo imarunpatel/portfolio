@@ -1,30 +1,21 @@
 'use client';
 import React, { useRef } from "react";
-import HDFCLife1 from '../../public/images/hdfc/hdfc1.webp'
 
 import { Timeline } from "../ui/Timeline";
-import { InfiniteMovingCards } from "../ui/InfiniteMovingCard";
+import { StackImageAnimation } from "../ui/StackImageAnimation";
 
 const hdfcPortfolio = [
   {
-    url: HDFCLife1.src,
-    title: "A Tale of Two Cities",
+    title: 'Team Outing HDFC Life',
+    src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/team_outing.webp",
   },
   {
-    url: HDFCLife1.src,
-    title: "Hamlet",
+    title: 'Team Photo HDFC Life',
+    src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/team.webp",
   },
   {
-    url: HDFCLife1.src,
-    title: "A Dream Within a Dream",
-  },
-  {
-    url: HDFCLife1.src,
-    title: "Pride and Prejudice",
-  },
-  {
-    url: HDFCLife1.src,
-    title: "Moby-Dick",
+    title: 'HDFC Life Diwali Celebration',
+    src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/diwali.webp",
   },
 ];
 
@@ -38,26 +29,22 @@ const data = [
         <p className=" dark:text-blue-600 text-xs md:text-sm font-normal mb-4">
         Software Development Engineer - Frontend
         </p>
-        <ul className="dark:text-gray-300 list-disc">
-          <li>
-            Designed and implemented face detection with eye blink detection in frontend, followed by real-time video recording. This feature reduced the liveliness verification failure rate from 33% to under 1%
-          </li>
-          <li>
-            Lead the frontend system design architecture, optimizing scalability and performance across projects and enhancing reliability and user experience.
-          </li>
-          <li>
-            AI Platform Dashboard: Developed a dashboard with advanced features: PDF upload and automatic summary generation, Interactive question-answering from uploaded PDFs, Audio upload with accurate transcription capabilities, etc.
-          </li>
-          <li>
-            Data-Driven Dashboards: Worked on multiple dashboards, delivering insightful and user-friendly interfaces for data analysis and management.
-          </li>
-        </ul>
-        <div className="w-[83vw] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={hdfcPortfolio}
-            direction="right"
-            speed="slow"
-          />
+        <div className="flex flex-col lg:flex-row gap-8">
+          <ul className="dark:text-gray-300 list-disc leading-7">
+            <li>
+              Designed and implemented face detection with eye blink detection in frontend, followed by real-time video recording. This feature reduced the liveliness verification failure rate from 33% to under 1%
+            </li>
+            <li>
+              Lead the frontend system design architecture, optimizing scalability and performance across projects and enhancing reliability and user experience.
+            </li>
+            <li>
+              AI Platform Dashboard: Developed a dashboard with advanced features: PDF upload and automatic summary generation, Interactive question-answering from uploaded PDFs, Audio upload with accurate transcription capabilities, etc.
+            </li>
+            <li>
+              Data-Driven Dashboards: Worked on multiple dashboards, delivering insightful and user-friendly interfaces for data analysis and management.
+            </li>
+          </ul>
+          <StackImageAnimation data={hdfcPortfolio} autoplay />
         </div>
       </div>
     ),
@@ -71,14 +58,17 @@ const data = [
         <p className="text-neutral-800 dark:text-blue-600 text-xs md:text-sm font-normal mb-4">
         Software Development Engineer
         </p>
-        <ul className="dark:text-gray-300 list-disc">
-          <li>
-            Led the front-end development for the EMA project, a ground-breaking Electronic Medical Assistant platform designed for NHS UK.
-          </li>
-          <li>
-            Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.
-          </li>
-        </ul>
+        <div className="flex flex-col lg:flex-row gap-8 leading-7">
+          <ul className="dark:text-gray-300 list-disc">
+            <li>
+              Led the front-end development for the EMA project, a ground-breaking Electronic Medical Assistant platform designed for NHS UK.
+            </li>
+            <li>
+              Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.
+            </li>
+          </ul>
+          <StackImageAnimation data={hdfcPortfolio} autoplay />
+        </div>
       </div>
     ),
   },
