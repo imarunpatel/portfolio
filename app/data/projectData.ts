@@ -14,7 +14,8 @@ const projects: Project[] = [
         backend: ['NodeJS', 'AWS Serverless Architecture', 'TypeScript'],
       },
       image: '/images/pennyTrack.png',
-      link: 'https://d1culq9uiz6gbl.cloudfront.net/'
+      link: 'https://d1culq9uiz6gbl.cloudfront.net/',
+      github: 'https://github.com/imarunpatel/penny-track-web'
     },
     {
       name: "Skills Track",
@@ -58,7 +59,8 @@ const projects: Project[] = [
         backend: ['Firebase']
       },
       image: '/images/todo.png',
-      link: 'https://todo-list-33bd0.firebaseapp.com/'
+      link: 'https://todo-list-33bd0.firebaseapp.com/',
+      github: "https://github.com/imarunpatel/todo-list"
     }
   ];
   

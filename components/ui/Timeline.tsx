@@ -35,7 +35,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full bg-white dark:bg-black px-3 md:px-10"
+      className={`w-full`}
       ref={containerRef}
     >
       <div ref={ref} className="relative max-w-7xl mx-auto">
@@ -51,7 +51,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
 
             <div className="relative">
-              <h3 className="sm:flex justify-between items-center text-lg sm:text-2xl md:text-2xl mb-0 text-left font-bold text-neutral-500 dark:text-neutral-500">
+              <h3 className="font-[neuton] sm:flex justify-between items-center text-lg sm:text-2xl md:text-2xl mb-0 text-left font-bold text-neutral-500 dark:text-neutral-500">
                 {item.title} <div className="my-2 sm:my-0 text-end ml-auto text-sm md:text-lg"><span>{item.start}</span> - {item.end === 'Present' ? <span className="text-blue-600 bg-gray-300 px-3 py-1 rounded-md text-sm">{item.end}</span> : <span>{item.end}</span>}</div>
               </h3>
               {item.content}{" "}

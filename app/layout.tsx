@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Neuton } from "next/font/google";
+import { Geist, Neuton, M_PLUS_Code_Latin } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import PageScrollBar from "@/components/ui/pageScrollBar";
@@ -15,6 +15,12 @@ const neuton = Neuton({
   variable: "--font-neuton", 
   subsets: ["latin"],
   weight: ['200', '300', '400', '700', '800']
+});
+
+const codeLatin = M_PLUS_Code_Latin({ 
+  variable: "--font-codeLatin", 
+  subsets: ["latin"],
+  weight: ['200', '300', '400', '700']
 });
 
 export const metadata: Metadata = {
@@ -36,11 +42,11 @@ export default function RootLayout({
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  rel="stylesheet" />
       </head>
       <body
-        className={`${geistSans.variable} ${neuton.variable} font-sans antialiased flex flex-col min-h-screen dark`}
+        className={`${geistSans.variable} ${neuton.variable} font-sans antialiased flex flex-col min-h-screen dark  bg-gradient-to-b from-black via-black/90 to-blue-900`}
       >
         <PageScrollBar/>
         <Header />
-        <main className="flex-1 dark:bg-black flex flex-col">
+        <main className="flex-1 flex flex-col">
           {children}
         </main>
         <Footer />

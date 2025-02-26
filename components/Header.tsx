@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import * as motion from "motion/react-client";
 import { Variants } from "motion/react";
 
@@ -61,7 +61,7 @@ const Header = () => {
             style={nav}
           >
             <motion.div style={background} variants={sidebarVariants} />
-            <Navigation />
+            <Navigation scrollToSection={scrollToSection} />
             <MenuToggle toggle={() => setIsOpen(!isOpen)} />
           </motion.nav>
         </div>
@@ -79,7 +79,7 @@ const navVariants = {
   },
 };
 
-const Navigation = () => (
+const Navigation: FC<{scrollToSection: (id: string) => void}> = ({ scrollToSection }) => (
   <motion.ul style={list} variants={navVariants}>
     {sections.map((item, index) => (
       <MenuItem item={item} index={index} key={index} />
@@ -108,12 +108,19 @@ const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const MenuItem = ({ item, index }: { item: string, index: number }) => {
   const border = `2px solid ${colors[index]}`;
+  const scrollToSection  = (id: string) => {
+    const section = document.getElementById(id);
+    if(section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
   return (
     <motion.li
       style={listItem}
       variants={itemVariants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
+      onClick={() => scrollToSection(item)}
     >
       <div style={{ ...iconPlaceholder, border }} />
       <div style={{ ...textPlaceholder, border }}>

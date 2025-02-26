@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 
 import { Timeline } from "../ui/Timeline";
 import { StackImageAnimation } from "../ui/StackImageAnimation";
+import SectionHeading from "../SectionHeading";
 
 const hdfcPortfolio = [
   {
@@ -19,6 +20,24 @@ const hdfcPortfolio = [
   },
 ];
 
+const parallelRealityPortfolio = [
+  {
+    title: '',
+    src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/team.webp',
+  },
+  {
+    title: '',
+    src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/ui_discussion.webp',
+  },
+  {
+    title: '',
+    src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/user_profile.webp',
+  },
+  {
+    title: '',
+    src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/appointment.webp',
+  }
+]
 const data = [
   {
     title: "HDFC Life Insurance, Banglore",
@@ -64,10 +83,21 @@ const data = [
               Led the front-end development for the EMA project, a ground-breaking Electronic Medical Assistant platform designed for NHS UK.
             </li>
             <li>
+               Developed comprehensive Progressive Web App (PWA) for NHS doctors to manage patient care, featuring:
+                <ul className="list-disc pl-5">
+                  <li>Prescription Management – Assign and track prescriptions.</li>
+                  <li>Doctor Notes – Send and manage patient notes.</li>
+                  <li>Video & Audio Calls – Secure telehealth consultations.</li>
+                  <li>Performance Tracking – Graph-based patient progress insights.</li>
+                  <li>Patient Onboarding – Seamless registration and profile management.</li>
+                  <li>Real-time Notifications – Instant updates for doctors and patients.</li>
+                </ul>
+            </li>
+            <li>
               Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.
             </li>
           </ul>
-          <StackImageAnimation data={hdfcPortfolio} autoplay />
+          <StackImageAnimation data={parallelRealityPortfolio} autoplay />
         </div>
       </div>
     ),
@@ -77,7 +107,7 @@ const data = [
     start: 'Sep 2020',
     end: 'Dec 2020',
     content: (
-      <div>
+      <div className="w-full">
         <p className="text-neutral-800 dark:text-blue-600 text-xs md:text-sm font-normal mb-4">
           Software Development Intern
         </p>
@@ -98,13 +128,9 @@ const Experience = () => {
   const ref = useRef(null);
 
   return (
-    <div ref={ref} id="experience">
-        <h2 className="py-10 flex justify-center left-0 top-[0px] dark:text-gray-100 font-bold text-xl md:text-4xl lg:text-4xl px-4 md:px-8 lg:px-10 leading-none dark:bg-black z-10">
-          Experience
-        </h2>
-        <div className="w-full">
-          <Timeline data={data} />
-        </div>
+    <div ref={ref} id="experience" className="w-full px-3 md:px-14">
+        <SectionHeading title="Experience." />
+        <Timeline data={data} />
     </div>
       
   );
