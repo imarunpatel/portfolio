@@ -1,4 +1,5 @@
-import { Experience } from "../(pages)/experience/components/ExperienceCard";
+import { Experience } from "@/model/experience";
+
 
 const experiences: Experience[] = [
     {
@@ -27,6 +28,20 @@ const experiences: Experience[] = [
         "TailwindCSS",
         "Ant Design",
       ],
+      images: [
+        {
+          title: 'Team Outing HDFC Life',
+          src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/team_outing.webp",
+        },
+        {
+          title: 'Team Photo HDFC Life',
+          src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/team.webp",
+        },
+        {
+          title: 'HDFC Life Diwali Celebration',
+          src: "https://d2q97ly59pm6yh.cloudfront.net/assets/experience/hdfc_life/diwali.webp",
+        },
+      ]
     },
     {
       company: "Parallel Reality, UK (Remote)",
@@ -40,6 +55,15 @@ const experiences: Experience[] = [
       description: "Software Development Engineer",
       points: [
         "Led the front-end development for the EMA project, a ground-breaking Electronic Medical Assistant platform designed for NHS UK.",
+        "Developed comprehensive Progressive Web App (PWA) for NHS doctors to manage patient care, featuring:",
+          [
+            "Prescription Management – Assign and track prescriptions.",
+            "Doctor Notes – Send and manage patient notes.",
+            "Video & Audio Calls – Secure telehealth consultations.",
+            "Performance Tracking – Graph-based patient progress insights.",
+            "Patient Onboarding – Seamless registration and profile management.",
+            "Real-time Notifications – Instant updates for doctors and patients."
+          ],
         "Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.",
       ],
       skills: [
@@ -53,6 +77,24 @@ const experiences: Experience[] = [
         "Accessibility",
         "Web Performance",
       ],
+      images: [
+        {
+          title: '',
+          src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/team.webp',
+        },
+        {
+          title: '',
+          src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/ui_discussion.webp',
+        },
+        {
+          title: '',
+          src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/user_profile.webp',
+        },
+        {
+          title: '',
+          src: 'https://d2q97ly59pm6yh.cloudfront.net/assets/experience/parallel_reality/appointment.webp',
+        }
+      ]
     },
     {
       company: "SimplyTurn Technology, Hyderabad (Remote)",
@@ -77,6 +119,7 @@ const experiences: Experience[] = [
         "GIT",
         "Figma",
       ],
+      images: []
     },
   ];
 

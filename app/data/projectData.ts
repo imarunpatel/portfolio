@@ -13,7 +13,7 @@ const projects: Project[] = [
         frontend: ['ReactJS', 'Tailwind CSS', 'Zustand'],
         backend: ['NodeJS', 'AWS Serverless Architecture', 'TypeScript'],
       },
-      image: '/images/pennyTrack.png',
+      image: 'https://d2q97ly59pm6yh.cloudfront.net/assets/projects/pennyTrack.webp',
       link: 'https://d1culq9uiz6gbl.cloudfront.net/',
       github: 'https://github.com/imarunpatel/penny-track-web'
     },
@@ -44,7 +44,7 @@ const projects: Project[] = [
         frontend: ["Angular", "Flutter"],
         backend: ["Node.js", "AWS Serverless Architecture"],
       },
-      image: "/images/rms.png",
+      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/skillsTrack.webp",
       link: 'https://royalmountschool.in/'
     },
     {
@@ -58,7 +58,7 @@ const projects: Project[] = [
         frontend: ['NextJS', 'Tailwind', 'Zustand'],
         backend: ['Firebase']
       },
-      image: '/images/todo.png',
+      image: 'https://d2q97ly59pm6yh.cloudfront.net/assets/projects/todo.webp',
       link: 'https://todo-list-33bd0.firebaseapp.com/',
       github: "https://github.com/imarunpatel/todo-list"
     }
