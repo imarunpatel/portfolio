@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex-1 flex flex-col gap-5 justify-center pt-16">
         <div className="h-auto w-full flex flex-col overflow-hidden rounded-md">
           <Heading />
-          <div className="w-auto md:w-[40rem] h-10 relative ">
+          <div className="w-auto md:w-[40rem] h-10 relative">
             {/* Gradients */}
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] mx-auto sm:w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px mx-auto sm:w-3/4" />
