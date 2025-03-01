@@ -1,7 +1,7 @@
-import { SparklesCore } from "@/components/ui/Sparkles";
+import { SparklesCore } from "@/components/Sparkles";
 import Button from "../Button";
 import Heading from "../Heading";
-import { ParallaxIcons } from "@/components/ui/ParallexIcons";
+import { ParallaxIcons } from "@/components/ParallexIcons";
 
 const Home = () => {
   return (

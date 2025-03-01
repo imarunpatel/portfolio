@@ -3,7 +3,7 @@ import { Geist, Neuton } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/Header";
 import Footer from "@/components/sections/Footer";
-import PageScrollBar from "@/components/ui/PageScrollBar";
+import PageScrollBar from "@/components/PageScrollBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

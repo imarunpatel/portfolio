@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import Modal from "./ui/Modal";
+import Modal from "./Modal";
 import PdfViewer from "./PdfViewer";
 
 const Button = () => {
