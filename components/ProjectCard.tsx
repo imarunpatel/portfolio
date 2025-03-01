@@ -65,7 +65,7 @@ const ProjectCard: FC<Props> = (props) => {
           src={props.data.image}
           width={1}
           height={1}
-          alt="Project Image"
+          alt={props.data.name}
         />
       </div>
     </div>

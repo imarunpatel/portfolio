@@ -28,7 +28,7 @@ const projects: Project[] = [
         frontend: ["NextJS", "TailwindCSS"],
         backend: ["Sanity"],
       },
-      image: "/images/skillsTrack.png",
+      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/skillsTrack.webp",
       link: 'https://skillstrack.in/',
     },
     {
@@ -44,7 +44,7 @@ const projects: Project[] = [
         frontend: ["Angular", "Flutter"],
         backend: ["Node.js", "AWS Serverless Architecture"],
       },
-      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/skillsTrack.webp",
+      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/rms.webp",
       link: 'https://royalmountschool.in/'
     },
     {
