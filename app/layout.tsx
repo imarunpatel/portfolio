@@ -3,7 +3,7 @@ import { Geist, Neuton } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header/Header";
 import Footer from "@/components/sections/Footer";
-import PageScrollBar from "@/components/ui/PageScrollBar";
+// import PageScrollBar from "@/components/ui/PageScrollBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -49,7 +49,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${neuton.variable} font-sans antialiased flex flex-col min-h-screen dark  bg-gradient-to-b from-black via-black/90 to-blue-900`}
       >
-        <PageScrollBar/>
+        {/* <PageScrollBar/> */}
         <Header />
         <main className="flex-1 flex flex-col">
           {children}
