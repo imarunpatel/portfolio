@@ -146,7 +146,6 @@ const MenuToggle = ({ toggle }: { toggle: () => void }) => (
  */
 const container: React.CSSProperties = {
   position: "inherit",
-  // display: "flex",
   justifyContent: "flex-start",
   alignItems: "stretch",
   flex: 1,
