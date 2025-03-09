@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { StackImageAnimation } from "./StackImageAnimation";
+import ImageSlider from "./ImageSlider";
 
 interface Props {
     designation: string;
@@ -33,7 +33,8 @@ const Content: FC<Props> = (props) => {
               ))
             }
           </ul>
-          {props.images.length && <StackImageAnimation data={props.images} autoplay />}
+          {/* {props.images.length && <StackImageAnimation data={props.images} autoplay />} */}
+          {props.images.length && <ImageSlider images={props.images} transition="fade" interval={5000} /> }
         </div>
       </div>
     )

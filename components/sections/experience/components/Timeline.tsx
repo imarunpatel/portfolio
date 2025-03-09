@@ -34,7 +34,7 @@ export const Timeline: FC<{data: Experience[]}> = (props) => {
       className={`w-full`}
       ref={containerRef}
     >
-      <div ref={ref} className="relative max-w-7xl mx-auto">
+      <div ref={ref} className="relative">
         {props.data.map((item, index) => (
           <div
             key={index}

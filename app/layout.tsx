@@ -51,7 +51,7 @@ export default function RootLayout({
       >
         <PageScrollBar/>
         <Header />
-        <main className="flex-1 flex flex-col">
+        <main className="flex-1 flex flex-col w-full max-w-7xl mx-auto">
           {children}
         </main>
         <Footer />
