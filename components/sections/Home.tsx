@@ -32,7 +32,7 @@ const Home = () => {
         </div>
         <div className="text-neutral-300 text-md -mt-12 leading-7">
           {/* I have over 4 years of experience in designing, developing, and implementing scalable, responsive enterprise-level applications. Skilled at employing a configurable approach and creating common framework components to accelerate development and enhance maintainability. */}
-          I graduated with a degree in Computer Science and have spent 6+ years building scalable, enterprise-grade web applications — including EMA (NHS UK), Digi VPC, and Galaxy Portal. I currently work on Talview's AI-powered hiring and proctoring platform, building secure, high-stakes assessment systems.
+          I graduated with a degree in Computer Science and have spent 6+ years building scalable, enterprise-grade web applications — including EMA (NHS UK), Digi VPC, and Galaxy Portal. I currently work on Talview&apos;s AI-powered hiring and proctoring platform, building secure, high-stakes assessment systems.
           <br/>
           <br/>
           My expertise spans React, Next.js, Angular, Node.js, TypeScript, GraphQL, PostgreSQL, and AWS. While I lean frontend, I work full-stack — designing APIs, integrating services, and owning features end-to-end from system design through deployment.
