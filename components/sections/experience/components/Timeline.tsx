@@ -1,15 +1,10 @@
 "use client";
-import {
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { FC, useEffect, useRef, useState } from "react";
 import Content from "./Content";
 import { Experience } from "@/model/experience";
 
-
-export const Timeline: FC<{data: Experience[]}> = (props) => {
+export const Timeline: FC<{ data: Experience[] }> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
@@ -30,25 +25,33 @@ export const Timeline: FC<{data: Experience[]}> = (props) => {
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
 
   return (
-    <div
-      className={`w-full`}
-      ref={containerRef}
-    >
+    <div className={`w-full`} ref={containerRef}>
       <div ref={ref} className="relative">
         {props.data.map((item, index) => (
-          <div
-            key={index}
-            className="flex justify-start md:gap-5"
-          >
+          <div key={index} className="flex justify-start md:gap-5">
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-10 w-full">
-                <div className="h-4 w-4 left-0 top-2 absolute rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+              <div className="h-4 w-4 left-0 top-2 absolute rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
             </div>
 
-            <div className="relative">
+            <div className="relative w-full">
               <h3 className="font-[neuton] sm:flex justify-between items-center text-lg sm:text-2xl md:text-2xl mb-0 text-left font-bold text-neutral-500 dark:text-neutral-500">
-                {item.company} <div className="my-2 sm:my-0 text-end ml-auto text-sm md:text-lg"><span>{item.duration.start}</span> - {item.duration.end === 'Present' ? <span className="text-blue-600 bg-gray-300 px-3 py-1 rounded-md text-sm">{item.duration.end}</span> : <span>{item.duration.end}</span>}</div>
+                <div>{item.company}</div>
+                <div className="my-2 sm:my-0 text-end ml-auto text-sm md:text-lg">
+                  <span>{item.duration.start}</span> -{" "}
+                  {item.duration.end === "Present" ? (
+                    <span className="text-blue-600 bg-gray-300 px-3 py-1 rounded-md text-sm">
+                      {item.duration.end}
+                    </span>
+                  ) : (
+                    <span>{item.duration.end}</span>
+                  )}
+                </div>
               </h3>
-              <Content designation={item.designation} points={item.points} images={item.images} />
+              <Content
+                designation={item.designation}
+                points={item.points}
+                images={item.images}
+              />
             </div>
           </div>
         ))}
@@ -70,5 +73,3 @@ export const Timeline: FC<{data: Experience[]}> = (props) => {
     </div>
   );
 };
-
-

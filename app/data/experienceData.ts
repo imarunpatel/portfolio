@@ -2,9 +2,25 @@ import { Experience } from "@/model/experience";
 
 
 const experiences: Experience[] = [
+  {
+      company: "Senior Software Engineer",
+      designation: "Talview",
+      isCurrent: true,
+      url: "https://www.hdfclife.com/",
+      duration: {
+        start: "June 2025",
+        end: "Present",
+      },
+      description: "Software Development Engineer - Frontend",
+      points: [
+        "Building a secure, accessible AI-powered hiring and proctoring platform used for high-stakes remote assessments.",
+      ],
+      skills: [],
+      images: []
+    },
     {
       company: "HDFC Life Insurance, Banglore",
-      designation: "Software Development Engineer - Frontend",
+      designation: "Software Development Engineer",
       isCurrent: true,
       url: "https://www.hdfclife.com/",
       duration: {

@@ -2,6 +2,23 @@ import { Project } from "../../components/ProjectCard";
 
 const projects: Project[] = [
     {
+      name: "Sayvr",
+      description: '',
+      points: [
+          'Built and shipped Sayvr end-to-end as solo founder — a multi-cloud cost intelligence platform for teams without a dedicated FinOps function.',
+          'Delivers daily Slack reports, anomaly detection, tag-aware cost breakdowns, and optimization recommendations across AWS, Azure, and Google Cloud, while keeping customer billing data in their own accounts.',
+          'Architected on an NX monorepo with serverless AWS Lambda (Node 20) functions and Postgres (Neon) for data storage.',
+          'Owns product, infra, and go-to-market as sole founder.'
+      ],
+      techStack: {
+        frontend: ['ReactJS'],
+        backend: ['AWS Lambda', 'Node.js', 'PostgreSQL (Neon)', 'NX Monorepo'],
+      },
+      image: 'https://d2q97ly59pm6yh.cloudfront.net/assets/projects/sayvr.webp',
+      link: 'https://d1culq9uiz6gbl.cloudfront.net/',
+      github: 'https://github.com/imarunpatel/penny-track-web'
+    },
+    {
       name: "Penny Track",
       description: '',
       points: [
@@ -17,51 +34,51 @@ const projects: Project[] = [
       link: 'https://d1culq9uiz6gbl.cloudfront.net/',
       github: 'https://github.com/imarunpatel/penny-track-web'
     },
-    {
-      name: "Skills Track",
-      description: "",
-      points: [
-        "Developed a dynamic blog website using NextJS, with content management powered by Sanity",
-        "Implemented Sanity's collaborative editing features, allowing multiple authors to work simultaneously on articles.",
-      ],
-      techStack: {
-        frontend: ["NextJS", "TailwindCSS"],
-        backend: ["Sanity"],
-      },
-      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/skillsTrack.webp",
-      link: 'https://skillstrack.in/',
-    },
-    {
-      name: "Royale Mount School",
-      description: "Developed a comprehensive school management system consisting of a website for students and parents, an admin mobile app, and a robust backend infrastructure to streamline school operations.",
-      points: [
-        "Responsive design for students and parents to access school-related information.",
-        "Features include announcements, dynamic update of images",
-        "Designed scalable RESTful APIs using AWS Lambda, API Gateway, and DynamoDB.",
-        "Implemented S3 for storing and serving media files."
-      ],
-      techStack: {
-        frontend: ["Angular", "Flutter"],
-        backend: ["Node.js", "AWS Serverless Architecture"],
-      },
-      image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/rms.webp",
-      link: 'https://royalmountschool.in/'
-    },
-    {
-      name: 'Todo List',
-      description: '',
-      points: [
-        'Developed a dynamic and user-friendly To-do List application with advanced features, enabling users to create tasks, upload images, and manage task progress seamlessly.',
-        'Implemented drag-and-drop functionality, allowing tasks to effortlessly move between different columns, such as “To-do”, “Progress”, and “Done”.'
-      ],
-      techStack: {
-        frontend: ['NextJS', 'Tailwind', 'Zustand'],
-        backend: ['Firebase']
-      },
-      image: 'https://d2q97ly59pm6yh.cloudfront.net/assets/projects/todo.webp',
-      link: 'https://todo-list-33bd0.firebaseapp.com/',
-      github: "https://github.com/imarunpatel/todo-list"
-    }
+    // {
+    //   name: "Skills Track",
+    //   description: "",
+    //   points: [
+    //     "Developed a dynamic blog website using NextJS, with content management powered by Sanity",
+    //     "Implemented Sanity's collaborative editing features, allowing multiple authors to work simultaneously on articles.",
+    //   ],
+    //   techStack: {
+    //     frontend: ["NextJS", "TailwindCSS"],
+    //     backend: ["Sanity"],
+    //   },
+    //   image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/skillsTrack.webp",
+    //   link: 'https://skillstrack.in/',
+    // },
+    // {
+    //   name: "Royale Mount School",
+    //   description: "Developed a comprehensive school management system consisting of a website for students and parents, an admin mobile app, and a robust backend infrastructure to streamline school operations.",
+    //   points: [
+    //     "Responsive design for students and parents to access school-related information.",
+    //     "Features include announcements, dynamic update of images",
+    //     "Designed scalable RESTful APIs using AWS Lambda, API Gateway, and DynamoDB.",
+    //     "Implemented S3 for storing and serving media files."
+    //   ],
+    //   techStack: {
+    //     frontend: ["Angular", "Flutter"],
+    //     backend: ["Node.js", "AWS Serverless Architecture"],
+    //   },
+    //   image: "https://d2q97ly59pm6yh.cloudfront.net/assets/projects/rms.webp",
+    //   link: 'https://royalmountschool.in/'
+    // },
+    // {
+    //   name: 'Todo List',
+    //   description: '',
+    //   points: [
+    //     'Developed a dynamic and user-friendly To-do List application with advanced features, enabling users to create tasks, upload images, and manage task progress seamlessly.',
+    //     'Implemented drag-and-drop functionality, allowing tasks to effortlessly move between different columns, such as “To-do”, “Progress”, and “Done”.'
+    //   ],
+    //   techStack: {
+    //     frontend: ['NextJS', 'Tailwind', 'Zustand'],
+    //     backend: ['Firebase']
+    //   },
+    //   image: 'https://d2q97ly59pm6yh.cloudfront.net/assets/projects/todo.webp',
+    //   link: 'https://todo-list-33bd0.firebaseapp.com/',
+    //   github: "https://github.com/imarunpatel/todo-list"
+    // }
   ];
   
   export default projects;

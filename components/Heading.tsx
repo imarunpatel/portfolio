@@ -18,7 +18,7 @@ const Heading = () => {
       >
         <span className='text-xl md:text-2xl'>Hello 👋 , </span>
         <br/> 
-        I am Arun a Frontend Engineer
+        I am Arun, a Senior Software Engineer.
       </motion.h1>
   )
 }

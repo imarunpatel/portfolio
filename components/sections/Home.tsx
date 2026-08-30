@@ -32,11 +32,10 @@ const Home = () => {
         </div>
         <div className="text-neutral-300 text-md -mt-12 leading-7">
           {/* I have over 4 years of experience in designing, developing, and implementing scalable, responsive enterprise-level applications. Skilled at employing a configurable approach and creating common framework components to accelerate development and enhance maintainability. */}
-          I graduated with a degree in Computer Science and have built a strong foundation as a Frontend Engineer. Over the years, I have worked on diverse and impactful projects such as EMA, Digi VPC, Galaxy, etc, where I contributed to building scalable, user-centric web applications.
+          I graduated with a degree in Computer Science and have spent 6+ years building scalable, enterprise-grade web applications — including EMA (NHS UK), Digi VPC, and Galaxy Portal. I currently work on Talview's AI-powered hiring and proctoring platform, building secure, high-stakes assessment systems.
           <br/>
           <br/>
-          In my current role, I specialize in creating seamless user interfaces while ensuring high performance and usability. My expertise spans React, Angular, AWS, System Design, and Web Components, Data Structure and Algoriths. Additionally, 
-          I have a solid understanding of backend technologies, which allows me to bridge the gap between frontend and backend effectively. This understanding enables me to design efficient APIs, integrate services, and ensure smooth end-to-end application workflows.
+          My expertise spans React, Next.js, Angular, Node.js, TypeScript, GraphQL, PostgreSQL, and AWS. While I lean frontend, I work full-stack — designing APIs, integrating services, and owning features end-to-end from system design through deployment.
           <br/>
           {/* <br/>
           My work reflects my passion for crafting impactful web solutions that enhance user experiences while solving complex problems. I thrive in collaborative environments and continuously aim to deliver high-quality products that make a difference. */}
