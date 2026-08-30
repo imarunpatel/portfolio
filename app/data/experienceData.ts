@@ -29,10 +29,17 @@ const experiences: Experience[] = [
       },
       description: "Software Development Engineer - Frontend",
       points: [
-        "Designed and implemented face detection with eye blink detection in frontend, followed by real-time video recording. This feature reduced the liveliness verification failure rate from 33% to under 1%",
-        "Lead the frontend system design architecture, optimizing scalability and performance across projects and enhancing reliability and user experience.",
-        "AI Platform Dashboard: Developed a dashboard with advanced features: PDF upload and automatic summary generation, Interactive question-answering from uploaded PDFs, Audio upload with accurate transcription capabilities, etc.",
-        "Data-Driven Dashboards: Worked on multiple dashboards, delivering insightful and user-friendly interfaces for data analysis and management.",
+        "Built real-time identity verification workflows (face detection, eye-blink liveness validation, video recording), reducing liveness verification failures from 33% to under 1%.",
+        "Developed responsive, scalable frontend applications using React, TypeScript, and modern tooling.",
+        "Built backend services and APIs powering AI features including document processing, summarization, question-answering, and audio transcription.",
+        "Delivered full-stack solutions for file uploads, asynchronous processing pipelines, and third-party AI service integrations.",
+        "Designed and maintained RESTful APIs, integrating frontend applications with backend services.",
+        "Built dashboards and reporting tools to support business data analysis.",
+        "Built dashboards and reporting tools to support business data analysis."
+        // "Designed and implemented face detection with eye blink detection in frontend, followed by real-time video recording. This feature reduced the liveliness verification failure rate from 33% to under 1%",
+        // "Lead the frontend system design architecture, optimizing scalability and performance across projects and enhancing reliability and user experience.",
+        // "AI Platform Dashboard: Developed a dashboard with advanced features: PDF upload and automatic summary generation, Interactive question-answering from uploaded PDFs, Audio upload with accurate transcription capabilities, etc.",
+        // "Data-Driven Dashboards: Worked on multiple dashboards, delivering insightful and user-friendly interfaces for data analysis and management.",
       ],
       skills: [
         "ReactJS",
@@ -80,7 +87,8 @@ const experiences: Experience[] = [
             "Patient Onboarding – Seamless registration and profile management.",
             "Real-time Notifications – Instant updates for doctors and patients."
           ],
-        "Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.",
+        "Built and maintained APIs, business logic, and user-facing applications for admin, representative, and doctor workflows."
+        // "Developed and maintained various components of the EMA system, including admin, representative, and doctor dashboards and developed and integrated RESTful APIs for seamless data handling and communication.",
       ],
       skills: [
         "ReactJS",
